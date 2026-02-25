@@ -1,87 +1,112 @@
-🎯 AI Career Coach - Full Stack Application
+# 🎯 AI Career Coach - Full Stack Application
 
-🚀 Complete Working Project - Ready to Run!
+
+## 🚀 Complete Working Project - Ready to Run!
 
 A comprehensive AI-powered career coaching platform built with Next.js 15, Prisma, Clerk Auth, and Google Gemini AI.
 
-✨ Features
+### ✨ Features
 
-🔐 Secure Authentication - Powered by Clerk
-📊 Smart Dashboard - Career insights and analytics
-📄 AI Resume Builder - Create ATS-optimized resumes
-✉️ Cover Letter Generator - Personalized cover letters
-🎤 Interview Preparation - AI-generated practice questions
-📈 Industry Insights - Salary trends and market analysis
-🎨 Modern UI - Built with Tailwind CSS and Shadcn UI
-🌙 Dark Mode - Beautiful dark theme
-⚡ Quick Start (5 Minutes)
+- 🔐 **Secure Authentication** - Powered by Clerk
+- 📊 **Smart Dashboard** - Career insights and analytics
+- 📄 **AI Resume Builder** - Create ATS-optimized resumes
+- ✉️ **Cover Letter Generator** - Personalized cover letters
+- 🎤 **Interview Preparation** - AI-generated practice questions
+- 📈 **Industry Insights** - Salary trends and market analysis
+- 🎨 **Modern UI** - Built with Tailwind CSS and Shadcn UI
+- 🌙 **Dark Mode** - Beautiful dark theme
 
-1. Install Dependencies
+---
 
+## ⚡ Quick Start (5 Minutes)
+
+### 1. Install Dependencies
+```bash
 npm install
-2. Setup Environment Variables
+```
 
-The .env file is already created! You just need to update the database URL:
+### 2. Setup Environment Variables
 
-Get a free database from Neon (takes 2 minutes)
-Copy your connection string
-Update DATABASE_URL in .env file
-See QUICK_START.md for detailed instructions
+The `.env` file is already created! You just need to update the database URL:
 
-3. Initialize Database
+1. Get a free database from [Neon](https://console.neon.tech/) (takes 2 minutes)
+2. Copy your connection string
+3. Update `DATABASE_URL` in `.env` file
 
+**See [QUICK_START.md](QUICK_START.md) for detailed instructions**
+
+### 3. Initialize Database
+```bash
 npx prisma db push
-4. Start Development Server
+```
 
+### 4. Start Development Server
+```bash
 npm run dev
-5. Open Your Browser
+```
 
-Visit: http://localhost:3000
+### 5. Open Your Browser
+Visit: **http://localhost:3000**
 
-📚 Documentation
+---
 
-QUICK_START.md - Get running in 5 minutes
-SETUP.md - Complete setup guide with troubleshooting
-LINKS_AND_RESOURCES.md - All URLs and resources
-🔑 Required API Keys
+## 📚 Documentation
 
-All keys are already in .env - you may need to update them if they're expired:
+- **[QUICK_START.md](QUICK_START.md)** - Get running in 5 minutes
+- **[SETUP.md](SETUP.md)** - Complete setup guide with troubleshooting
+- **[LINKS_AND_RESOURCES.md](LINKS_AND_RESOURCES.md)** - All URLs and resources
 
-Database (Required)
+---
 
-Neon: https://console.neon.tech/ (Free)
-Supabase: https://supabase.com/ (Alternative)
-Authentication (Required)
+## 🔑 Required API Keys
 
-Clerk: https://dashboard.clerk.com/ (Free - 10K users)
-AI Features (Required)
+All keys are already in `.env` - you may need to update them if they're expired:
 
-Google Gemini: https://makersuite.google.com/app/apikey (Free)
-🌐 Application URLs
+### Database (Required)
+- **Neon**: https://console.neon.tech/ (Free)
+- **Supabase**: https://supabase.com/ (Alternative)
+
+### Authentication (Required)
+- **Clerk**: https://dashboard.clerk.com/ (Free - 10K users)
+
+### AI Features (Required)
+- **Google Gemini**: https://makersuite.google.com/app/apikey (Free)
+
+---
+
+## 🌐 Application URLs
 
 Once running, access these pages:
 
-Page	URL	Description
-Home	http://localhost:3000	Landing page
-Sign In	http://localhost:3000/sign-in	User login
-Sign Up	http://localhost:3000/sign-up	User registration
-Dashboard	http://localhost:3000/dashboard	Main dashboard
-Resume	http://localhost:3000/resume	Resume builder
-Cover Letter	http://localhost:3000/ai-cover-letter	Cover letter generator
-Interview	http://localhost:3000/interview	Interview prep
-🛠️ Tech Stack
+| Page | URL | Description |
+|------|-----|-------------|
+| Home | http://localhost:3000 | Landing page |
+| Sign In | http://localhost:3000/sign-in | User login |
+| Sign Up | http://localhost:3000/sign-up | User registration |
+| Dashboard | http://localhost:3000/dashboard | Main dashboard |
+| Resume | http://localhost:3000/resume | Resume builder |
+| Cover Letter | http://localhost:3000/ai-cover-letter | Cover letter generator |
+| Interview | http://localhost:3000/interview | Interview prep |
 
-Framework: Next.js 15 (App Router)
-Database: PostgreSQL with Prisma ORM
-Authentication: Clerk
-AI: Google Gemini 1.5 Flash
-Styling: Tailwind CSS
-UI Components: Shadcn UI + Radix UI
-Background Jobs: Inngest
-Form Handling: React Hook Form + Zod
-Charts: Recharts
-📦 Project Structure
+---
 
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Database**: PostgreSQL with Prisma ORM
+- **Authentication**: Clerk
+- **AI**: Google Gemini 1.5 Flash
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn UI + Radix UI
+- **Background Jobs**: Inngest
+- **Form Handling**: React Hook Form + Zod
+- **Charts**: Recharts
+
+---
+
+## 📦 Project Structure
+
+```
 ai-career-coach/
 ├── app/                    # Next.js app directory
 │   ├── (auth)/            # Authentication pages
@@ -98,10 +123,15 @@ ai-career-coach/
 ├── prisma/                # Database schema
 ├── public/                # Static assets
 └── .env                   # Environment variables ✅
-🎯 Environment Variables
+```
 
-Your .env file should contain:
+---
 
+## 🎯 Environment Variables
+
+Your `.env` file should contain:
+
+```env
 # Database (UPDATE THIS)
 DATABASE_URL=your_postgresql_connection_string
 
@@ -117,38 +147,51 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
 
 # Google Gemini AI
 GEMINI_API_KEY=your_gemini_api_key
-🚀 Deployment
+```
 
-Deploy to Vercel (Recommended)
+---
 
-Push your code to GitHub
-Go to Vercel
-Import your repository
-Add environment variables
-Deploy!
-Important: Update Clerk URLs to your production domain
+## 🚀 Deployment
 
-🐛 Troubleshooting
+### Deploy to Vercel (Recommended)
 
-Database Connection Error
+1. Push your code to GitHub
+2. Go to [Vercel](https://vercel.com/)
+3. Import your repository
+4. Add environment variables
+5. Deploy!
 
+**Important**: Update Clerk URLs to your production domain
+
+---
+
+## 🐛 Troubleshooting
+
+### Database Connection Error
+```
 Error: Can't reach database server
-Solution: Update DATABASE_URL in .env with a valid PostgreSQL connection string
+```
+**Solution**: Update `DATABASE_URL` in `.env` with a valid PostgreSQL connection string
 
-Port Already in Use
-
+### Port Already in Use
+```
 Error: Port 3000 is already in use
-Solution: Run npx kill-port 3000 or use a different port: npm run dev -- -p 3001
+```
+**Solution**: Run `npx kill-port 3000` or use a different port: `npm run dev -- -p 3001`
 
-Module Not Found
-
+### Module Not Found
+```
 Error: Cannot find module
-Solution: Run npm install again
+```
+**Solution**: Run `npm install` again
 
-See SETUP.md for more troubleshooting help
+**See [SETUP.md](SETUP.md) for more troubleshooting help**
 
-📝 Available Scripts
+---
 
+## 📝 Available Scripts
+
+```bash
 # Development
 npm run dev          # Start development server
 npm run build        # Build for production
@@ -159,17 +202,27 @@ npm run lint         # Run ESLint
 npx prisma studio    # Open database GUI
 npx prisma db push   # Push schema to database
 npx prisma generate  # Generate Prisma Client
-📄 License
+```
+
+---
+
+
+---
+
+## 📄 License
 
 This project is for educational purposes.
 
 --
 
-✅ Current Status
+---
 
-✅ All dependencies installed
-✅ Environment variables configured
-✅ Prisma schema ready
-✅ No code errors
-⚠️ Database connection needs to be updated (see QUICK_START.md)
-You're 95% ready to go! Just update the database URL and you're done! 🎉
+## ✅ Current Status
+
+- ✅ All dependencies installed
+- ✅ Environment variables configured
+- ✅ Prisma schema ready
+- ✅ No code errors
+- ⚠️ Database connection needs to be updated (see QUICK_START.md)
+
+**You're 95% ready to go! Just update the database URL and you're done! 🎉**
